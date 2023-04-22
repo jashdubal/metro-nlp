@@ -5,11 +5,11 @@ CitySentiment is a web application that allows users to explore the current sent
 <img src="assets/citymetrics.png"/>
 
 ## 🚀 Features
-Search and explore sentiment data for cities based on Reddit posts.
-Visualize city sentiment fluctuations over time using interactive charts.
-Discover the sentiment distribution of top posts for the current day.
-View top positive and negative posts for each city.
-Share city sentiment data on social media.
+- Search and explore sentiment data for cities based on Reddit posts.
+- Visualize city sentiment fluctuations over time using interactive charts.
+- Discover the sentiment distribution of top posts for the current day.
+- View top positive and negative posts for each city.
+- Share city sentiment data on social media.
 
 ## 💻 Tech Stack
 Front-end: React
