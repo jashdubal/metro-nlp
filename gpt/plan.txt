@@ -1,0 +1,63 @@
+- Develop a web application that allows users to look at current sentiment of cities
+- Above is done through scraping reddit posts from subreddit cities and aggregate the sentiment of top 100 posts for each day
+- So in a way it will be a stock market that shows the fluctuation of city sentiments over time. We will also keep an accumulating score of sentiment as well.
+
+As a data scientist with extremely good product sense I want you to take this idea as a foundation and develop a full infrastructure and process on how to develop this application into production. I want to use Go and Huggingface Transformers to determine the sentiment of each reddit post.
+
+Take inspiration from other projects software engineering students have done in this past and create a full plan to engineer this project and then give me a plan on how to market it without spending any money on things like reddit and twitter to make it go viral. This project is being developed in an attempt to impress recruiter for data science and software engineering jobs at top company so your solution must reflect this use case.
+
+
+
+Step 1: Planning and ideation
+Goals:
+
+Allow users to visualize the sentiment of cities based on Reddit data.
+Aggregate sentiment from top 100 posts for each city daily.
+Display sentiment fluctuations over time, similar to a stock market.
+Maintain an accumulating score of sentiment for each city.
+Target audience:
+
+People interested in monitoring the mood of cities.
+Data enthusiasts and those interested in social trends.
+Urbanists and city planners.
+Technical requirements:
+
+Front-end: React or Vue.js.
+Back-end: Go.
+APIs: Reddit API, Huggingface Transformers.
+Data storage: PostgreSQL or MongoDB.
+Timeline and milestones:
+
+Set up project repository and environment (1 week).
+Design UI/UX and create wireframes (2 weeks).
+Implement Reddit scraper and sentiment analysis (3 weeks).
+Develop front-end and back-end components (4 weeks).
+Test and deploy the application (2 weeks).
+Promote the project and gather feedback (2 weeks).
+Step 2: Design and prototyping
+
+User interface (UI) and user experience (UX) design:
+
+Landing page: The landing page should have a clean and modern design, displaying a search bar for users to enter a city name, and a list of popular cities with their current sentiment scores.
+City sentiment dashboard: After searching for a city, users are directed to the city sentiment dashboard, which includes:
+City name and sentiment score.
+A line chart displaying sentiment fluctuations over time.
+A bar chart showing the sentiment distribution of top 100 posts for the current day.
+A list of top positive and negative posts.
+A share button for social media.
+Navigation: Include a responsive navigation bar for accessing the landing page, an about page with information about the project, and an optional login button for user authentication.
+Application architecture:
+
+Front-end: React or Vue.js for a responsive and interactive UI.
+Back-end: A RESTful API in Go to handle requests and serve data.
+Data storage: PostgreSQL or MongoDB for storing sentiment data.
+Web scraper: A Go module using Reddit API or a web scraping library like Colly.
+Sentiment analysis: Huggingface Transformers for analyzing post sentiment.
+To create a diagram for your Git README, you can use a tool like draw.io, Lucidchart, or Figma. The diagram should show the main components of the application and their interactions:
+
+Front-end (React/Vue.js): Displaying the data to users.
+Back-end (Go): Handling API requests and serving data.
+Database (PostgreSQL/MongoDB): Storing sentiment data.
+Reddit scraper: Fetching data from Reddit.
+Sentiment analysis (Huggingface Transformers): Analyzing post sentiment.
+Create arrows between these components to show the flow of data between them.
