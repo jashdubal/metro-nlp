@@ -11,14 +11,5 @@ CitySentiment is a web application that allows users to explore the current sent
 - View top positive and negative posts for each city.
 - Share city sentiment data on social media.
 
-## 💻 Tech Stack
-Front-end: React
-
-Back-end: Go
-
-Data storage: PostgreSQL
-
-APIs: Reddit API, Huggingface Transformers
-
 ## License 
 This project is licensed under the Apache License 2.0 License. See the LICENSE file for more information.
