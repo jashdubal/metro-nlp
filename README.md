@@ -13,8 +13,11 @@ CitySentiment is a web application that allows users to explore the current sent
 
 ## 💻 Tech Stack
 Front-end: React
+
 Back-end: Go
+
 Data storage: PostgreSQL
+
 APIs: Reddit API, Huggingface Transformers
 
 ## License 
