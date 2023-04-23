@@ -1,15 +1,29 @@
-# CitySentiment - Visualizing City Sentiment Through Reddit Data
 
-CitySentiment is a web application that allows users to explore the current sentiment of cities by aggregating and analyzing the sentiment of the top 100 Reddit posts in city-specific subreddits each day. The application visualizes sentiment fluctuations over time, similar to a stock market, and maintains an accumulating score of sentiment for each city.
+<h1 align="center">
+  <br>
+  <a href="https://github.com/jashdubal/city-sentiment"><img src="assets/logo.png" alt="CitySentiment" width="200"></a>
+  <br>
+  CitySentiment
+  <br>
+</h1>
 
-<img src="assets/citymetrics.png"/>
+<h4 align="center">Comparing City Sentiments Through Reddit Data.</h4>
 
-## 🚀 Features
-- Search and explore sentiment data for cities based on Reddit posts.
-- Visualize city sentiment fluctuations over time using interactive charts.
-- Discover the sentiment distribution of top posts for the current day.
-- View top positive and negative posts for each city.
-- Share city sentiment data on social media.
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#license">License</a>
+</p>
 
-## License 
+![screenshot](assets/citymetrics.png)
+
+## Features
+
+- 📊 Visualize city sentiment fluctuations over time using interactive charts.
+- 🔍 Search and explore sentiment data for cities based on Reddit posts.
+- 🌆 Discover the sentiment distribution of top posts for the current day.
+- 🏙️ View top positive and negative posts for each city.
+- 📤 Share city sentiment data on social media.
+
+## License
+
 This project is licensed under the Apache License 2.0 License. See the LICENSE file for more information.
