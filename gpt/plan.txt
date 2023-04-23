@@ -61,3 +61,15 @@ Database (PostgreSQL/MongoDB): Storing sentiment data.
 Reddit scraper: Fetching data from Reddit.
 Sentiment analysis (Huggingface Transformers): Analyzing post sentiment.
 Create arrows between these components to show the flow of data between them.
+
+
+Step 5: Marketing and promotion
+
+To promote the application without spending money, leverage the following tactics:
+
+Post about your project on relevant Reddit city subreddits, explaining its features and value to users.
+Share the project on Twitter, using hashtags related to cities, data science, and software engineering.
+Write a blog post detailing the project, its challenges, and your solutions, which can be shared on platforms like Medium, LinkedIn, or your personal website.
+Contribute to online communities like Hacker News, Dev.to, and relevant Discord channels or Slack groups.
+Seek feedback from peers, mentors, and professionals in the industry to further refine your project and increase its visibility.
+This plan should help you create a solid web application that showcases your data science and software engineering skills, impressing recruiters at top companies. Remember to document your progress and keep your code clean and well-organized to demonstrate your commitment to quality and professionalism.

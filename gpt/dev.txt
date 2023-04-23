@@ -1,0 +1,64 @@
+Development modules:
+	Reddit Scraper:
+
+	Hugging Face Sentiment Anaylzer:
+
+	Backend APIs for web server:
+		- GET City Sentiment Data API
+
+	Backend batch job to gather and update sentiment data:
+
+
+First step is to combine the scraper, hugging face sentiment analyzer and put these values into a database.
+
+Database soltuion (postgres):
+	City: This entity represents the city and contains information about the city and its corresponding subreddit.
+		- Attributes: id (primary key), name, subreddit_name
+	Sentiment: This entity stores the sentiment data for each city.
+		- Attributes: id (primary key), city_id (foreign key referencing City), date, sentiment_score
+
+	PSQL:
+	CREATE TABLE city (
+	    city_id SERIAL PRIMARY KEY,
+	    name VARCHAR(255) NOT NULL,
+	    subreddit_name VARCHAR(255) NOT NULL
+	);
+
+	CREATE TABLE sentiment (
+	    sentiment_id SERIAL PRIMARY KEY,
+	    city_id INTEGER REFERENCES city(city_id),
+	    date DATE NOT NULL,
+	    sentiment_score REAL NOT NULL
+	);
+
+
+Inserting cities:
+INSERT INTO city (name, subreddit_name)
+VALUES 
+    ('New York', '/r/nyc'),
+    ('Seattle', '/r/seattle'),
+    ('Chicago', '/r/chicago'),
+    ('Los Angeles', '/r/losangeles'),
+    ('Portland', '/r/portland'),
+    ('Boston', '/r/boston'),
+    ('Austin', '/r/austin'),
+    ('San Francisco', '/r/sanfrancisco'),
+    ('Washington', '/r/washingtondc'),
+    ('Houston', '/r/houston'),
+    ('Calgary', '/r/calgary'),
+    ('Toronto', '/r/toronto'),
+    ('Vancouver', '/r/vancouver'),
+    ('Edmonton', '/r/edmonton'),
+    ('Ottawa', '/r/ottawa'),
+    ('Winnipeg', '/r/winnipeg'),
+    ('Halifax', '/r/halifax'),
+    ('Saskatoon', '/r/saskatoon'),
+    ('Mississauga', '/r/mississauga'),
+    ('Hamilton', '/r/hamilton');
+
+
+TRUNCATE TABLE sentiment
+
+
+
+React boiler plate: https://github.com/NoQuarterTeam/boilerplate-graphql

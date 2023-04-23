@@ -4,20 +4,18 @@ from scipy.special import softmax
 import sys
 
 def analyze_sentiment(text):
-    task = 'sentiment'
-    MODEL = f"cardiffnlp/twitter-roberta-base-{task}"
+    MODEL = "distilbert-base-uncased-finetuned-sst-2-english"
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL)
     model = AutoModelForSequenceClassification.from_pretrained(MODEL)
 
     encoded_input = tokenizer(text, return_tensors='pt')
     output = model(**encoded_input)
-    scores = output[0][0].detach().numpy()
+    scores = output.logits.detach().numpy()
     scores = softmax(scores)
 
-    labels = ['negative', 'neutral', 'positive']
+    labels = ['negative', 'positive']
     sentiment = labels[np.argmax(scores)]
-
     return sentiment
 
 if __name__ == "__main__":

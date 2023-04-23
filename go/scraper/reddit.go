@@ -1,12 +1,9 @@
 package main
 
 import (
-	"bufio"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"os"
-	"time"
 )
 
 type Post struct {
@@ -14,48 +11,17 @@ type Post struct {
 	URL   string `json:"url"`
 }
 
-func main() {
-	// Get the current directory
-	dir, err := os.Getwd()
-	if err != nil {
-		panic(err)
-	}
-
-	// Open the file
-	file, err := os.Open(dir + "/gpt/cities.txt")
-	if err != nil {
-		panic(err)
-	}
-	defer file.Close()
-
-	// Create a scanner to read the file line by line
-	scanner := bufio.NewScanner(file)
-
-	// Get the first subreddit and print it
-	var subreddit string
-	if scanner.Scan() {
-		subreddit = scanner.Text()
-		fmt.Printf("Subreddit: %s\n", subreddit)
-	}
-
-	// Check for errors during scanning
-	if err := scanner.Err(); err != nil {
-		panic(err)
-	}
-
-	// Set up the request to the Reddit API
-	url := fmt.Sprintf("https://www.reddit.com%s/new.json?limit=100", subreddit)
+func getTopPosts(subreddit string, limit int) ([]Post, error) {
+	url := fmt.Sprintf("https://www.reddit.com%s/new.json?limit=%d", subreddit, limit)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0")
-
-	// Send the request and parse the JSON response
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 	defer resp.Body.Close()
 
@@ -69,16 +35,28 @@ func main() {
 
 	err = json.NewDecoder(resp.Body).Decode(&data)
 	if err != nil {
+		return nil, err
+	}
+
+	var posts []Post
+	for _, child := range data.Data.Children {
+		posts = append(posts, child.Data)
+	}
+
+	return posts, nil
+}
+
+func main() {
+	subreddit := "/r/sanfrancisco"
+
+	posts, err := getTopPosts(subreddit, 5)
+	if err != nil {
 		panic(err)
 	}
 
-	// Print today's date
-	fmt.Printf("Today's date: %s\n", time.Now().Format("2006-01-02"))
-
 	// Print the titles and URLs of the top 5 posts
 	fmt.Println("Top 5 posts today:")
-	for i := 0; i < 5; i++ {
-		post := data.Data.Children[i].Data
+	for i, post := range posts {
 		fmt.Printf("%d. %s - %s\n", i+1, post.Title, post.URL)
 	}
 }
