@@ -14,7 +14,8 @@
   <a href="#license">License</a>
 </p>
 
-https://user-images.githubusercontent.com/73313777/234739760-205a37e8-ab0a-428c-aaa0-ed9060a4cde7.mp4
+
+https://user-images.githubusercontent.com/73313777/234739985-f6cbe055-252b-4186-85db-78929479b9bb.mp4
 
 ![screenshot](assets/citymetrics.png)
 
