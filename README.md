@@ -17,14 +17,14 @@ https://user-images.githubusercontent.com/73313777/234741052-da1095b8-b93e-4df6-
 
 ## Features
 
->📊 Visualize city sentiment fluctuations over time using interactive charts.
+- 📊 Visualize city sentiment fluctuations over time using interactive charts.
 
 
->🔍 Search and explore sentiment data for cities based on Reddit posts.
+- 🔍 Search and explore sentiment data for cities based on Reddit posts.
 
 
->🌆 Discover the sentiment distribution of top posts for the current day.
+- 🌆 Discover the sentiment distribution of top posts for the current day.
 
 ## License
 
-This project is licensed under the Apache License 2.0 License. See the LICENSE file for more information.
+>This project is licensed under the Apache License 2.0 License. See the LICENSE file for more information.
