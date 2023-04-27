@@ -27,4 +27,4 @@ https://user-images.githubusercontent.com/73313777/234741052-da1095b8-b93e-4df6-
 
 ## License
 
->This project is licensed under the Apache License 2.0 License. See the LICENSE file for more information.
+This project is licensed under the Apache License 2.0 License. See the LICENSE file for more information.
