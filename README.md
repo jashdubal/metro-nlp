@@ -1,12 +1,7 @@
 
 <h1 align="center">
-  <br>
-  <a href="https://github.com/jashdubal/city-sentiment"><img src="assets/logo.png" alt="CitySentiment" width="200"></a>
-  <br>
-  CitySentiment
-  <br>
+  Metro NLP
 </h1>
-
 <h4 align="center">Comparing City Sentiments Through Reddit Data.</h4>
 
 <p align="center">
@@ -15,7 +10,8 @@
 </p>
 
 
-https://user-images.githubusercontent.com/73313777/234739985-f6cbe055-252b-4186-85db-78929479b9bb.mp4
+
+https://user-images.githubusercontent.com/73313777/234741052-da1095b8-b93e-4df6-a3ce-ee907a112e7e.mp4
 
 ![screenshot](assets/citymetrics.png)
 
