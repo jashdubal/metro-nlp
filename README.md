@@ -1,12 +1,6 @@
-
 <h1 align="center">
-  <br>
-  <a href="https://github.com/jashdubal/city-sentiment"><img src="assets/logo.png" alt="CitySentiment" width="200"></a>
-  <br>
-  CitySentiment
-  <br>
+  Metro NLP
 </h1>
-
 <h4 align="center">Comparing City Sentiments Through Reddit Data.</h4>
 
 <p align="center">
@@ -14,15 +8,23 @@
   <a href="#license">License</a>
 </p>
 
+
+
+https://user-images.githubusercontent.com/73313777/235328414-bb57c46a-3f71-49a8-a5f8-324ceb24e9ad.mp4
+
+
+
 ![screenshot](assets/citymetrics.png)
 
 ## Features
 
 - 📊 Visualize city sentiment fluctuations over time using interactive charts.
+
+
 - 🔍 Search and explore sentiment data for cities based on Reddit posts.
-- 🌆 Discover the sentiment distribution of top posts for the current day.
-- 🏙️ View top positive and negative posts for each city.
-- 📤 Share city sentiment data on social media.
+
+
+- 🌆 Discover the sentiment distribution for different cities.
 
 ## License
 
