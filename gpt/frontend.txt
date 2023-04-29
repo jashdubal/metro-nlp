@@ -1,0 +1,40 @@
+typewriter:
+what city should i move to?
+Travel destination planning - what city should i travel to?
+City reputation analysis - which cities have the most positive vibes?
+Local event popularity - How did Coachella go this year?
+Neighborhood safety assessment - What are the safest cities?
+
+Harnesses the power of AI to gauge the sentiment of cities across the globe. Gain valuable insights, uncover hidden trends, and make informed decisions with our cutting-edge sentiment analysis tool.
+
+
+Try it now
+
+Features
+
+FAQ:
+
+Q: What is the Metro AI project all about?
+A: Our project is all about analyzing Reddit posts to gauge the sentiment of various cities. We use AI and natural language processing to understand how people feel about these cities, which helps you make informed decisions about where to move, travel, or even invest.
+
+Q: Can I use this tool to decide where to move or travel?
+A: Absolutely! Our project can give you valuable insights into the general vibe of different cities. However, remember that our tool should be just one part of your decision-making process. It's important to consider other factors, like your personal preferences, job opportunities, cost of living, and more.
+
+Q: How does the sentiment analysis work?
+A: Our system utilizes advanced techniques for web scraping and text preprocessing written in the Go programming language. Next, we apply state-of-the-art deep learning models from the Hugging Face Transformers library, specifically the twitter-roberta-base-sentiment model which has been fine-tuned on large-scale social media data to classify and gauge sentiment accurately. You can find more information on this model at https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment. Finally, our system aggregates and presents the sentiment data in easy-to-use dashboards, allowing you to quickly analyze the sentiment of Reddit posts on any topic.
+
+Q: Is there a cost to use this tool?
+A: Our Reddit city sentiment tool is completely free to use. We believe that everyone should have access to this kind of information, so feel free to explore and share it with your friends!
+
+
+Q: What is the Metro AI project all about?
+A: The Metro AI project aims to analyze Reddit posts to gauge the sentiment of various cities using deep learning and natural language processing. This helps users make informed decisions about where to move, travel, or invest.
+
+Q: Can this tool be used to decide where to move or travel?
+A: Absolutely! The project provides valuable insights into the general vibe of different cities. However, it is important to remember that this tool should only be one part of the decision-making process. Other factors, such as personal preferences, job opportunities, cost of living, and more, should also be considered.
+
+Q: How does the sentiment analysis work?
+A: The system employs advanced techniques for web scraping and text preprocessing written in the Go programming language. Subsequently, state-of-the-art deep learning models from the Hugging Face Transformers library, namely the twitter-roberta-base-sentiment model, are applied. This model has been fine-tuned on large-scale social media data to accurately classify and gauge sentiment. Further, the system aggregates and presents the sentiment data in easy-to-use dashboards, enabling users to quickly analyze the sentiment of Reddit posts on any topic.
+
+Q: Is there a cost associated with using this tool?
+A: The Reddit city sentiment tool is completely free to use. Access to this kind of information should be available to everyone, so users are free to explore and share it with others.
