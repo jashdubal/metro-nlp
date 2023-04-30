@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../components/hero/index.tsx -> typewriter-effect":{id:5459,files:["static/chunks/459.ed2e83c6b7891a7a.js"]}};
