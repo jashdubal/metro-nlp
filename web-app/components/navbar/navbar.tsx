@@ -91,8 +91,11 @@ export const Nav = () => {
       href="#"
       onPressEnd={() => {
         // Go to the /dashboard page
-        window.location.href = '/dashboard';
+         router.push('/dashboard');
+
       }}
+
+      
     >
       Try now
     </Button>

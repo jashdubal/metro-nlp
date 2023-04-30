@@ -3,6 +3,8 @@ import React from 'react';
 import { Flex } from '../styles/flex';
 import Link from 'next/link';
 import CustomButton from '../CustomButton';
+import { useRouter } from 'next/router';
+import { router } from 'next/client';
 
 export const Trial = () => {
    return (
@@ -20,7 +22,8 @@ export const Trial = () => {
           <CustomButton auto css={{ gap: '$15', width: '250px' }}
           onPressEnd={() => {
             // Redirect to the /dashboard page
-            window.location.href = '/dashboard';
+            router.push('/dashboard');
+
             }}
             >
             Start Analyzing
